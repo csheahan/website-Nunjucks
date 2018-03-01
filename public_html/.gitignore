@@ -1,4 +1,4 @@
-# Ignore everything in this directory
+# Ignore everything in this directory except this file.
+# Have the .gitignore here to ensure public_html is included in repo.
 *
-# Except this file
 !.gitignore
