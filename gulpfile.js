@@ -1,3 +1,4 @@
+var data = require('gulp-data');
 var del = require('del');
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
@@ -13,8 +14,11 @@ gulp.task('clean', function(cb) {
 });
 
 // Renders website in src and outputs files to public_html folder
-gulp.task('nunjucks', function() {
+gulp.task('website', function() {
   return gulp.src('src/pages/**/*.+(njk)')
+    // .pipe(data(function() {
+    //     return require('./src/data/navbar.json')
+    // }))
     .pipe(nunjucksRender({ path: ['src/templates',] }))
     .pipe(gulp.dest('public_html'))
 });

@@ -1,5 +1,10 @@
 {% extends "template.njk" %}
 
+{% block navbar %}
+{{ super() }}
+{{ nav.active('index') }}
+{% endblock %}
+
 {% block content %}
 <h1>Placeholder</h1>
 {% endblock %}
