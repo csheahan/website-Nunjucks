@@ -23,9 +23,16 @@ gulp.task('css', function () {
     .pipe(gulp.dest(dropDir + '/css'));
 });
 
+// Copy image files to drop
 gulp.task('img', function() {
   return gulp.src(srcDir + '/img/**/*')
     .pipe(gulp.dest(dropDir + '/img'));
+});
+
+// Copy js files to drop
+gulp.task('js', function() {
+  return gulp.src(srcDir + '/js/**/*.js')
+    .pipe(gulp.dest(dropDir + '/js'));
 });
 
 // Render nunjuck files in src to drop
@@ -36,4 +43,11 @@ gulp.task('nunjucksRender', function () {
 })
 
 // Creates website in drop directory
-gulp.task('website', ['nunjucksRender', 'css']);
+gulp.task(
+  'website',
+  [
+    'nunjucksRender',
+    'css',
+    'js',
+    'img',
+  ]);
