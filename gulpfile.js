@@ -23,6 +23,11 @@ gulp.task('css', function () {
     .pipe(gulp.dest(dropDir + '/css'));
 });
 
+gulp.task('img', function() {
+  return gulp.src(srcDir + '/img/**/*')
+    .pipe(gulp.dest(dropDir + '/img'));
+});
+
 // Render nunjuck files in src to drop
 gulp.task('nunjucksRender', function () {
   return gulp.src(srcDir + '/pages/**/*.+(njk)')
