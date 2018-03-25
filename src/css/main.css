@@ -9,6 +9,10 @@ header {
   display: table;
 }
 
+.darkBackground {
+  background-color: #060606;
+}
+
 .topPadding {
   padding-top: 100px;
   padding-bottom: 2em;
@@ -19,7 +23,7 @@ header {
   display: table-cell;
 }
 
-.smallOrangeHR {
+.smallOrangeHr  {
   max-width: 50px;
   border-color: #FFA500;
   border-width: 3px;
