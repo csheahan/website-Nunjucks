@@ -3,22 +3,32 @@ var del = require('del');
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 
-// Delete everything in public_html except the placeholder .gitignore
+// Source and destination locations
+var srcDir = 'src'
+var dropDir = 'public_html'
+
+// Delete everything in drop except the placeholder .gitignore, if exists
 gulp.task('clean', function(cb) {
   del(
     [
-      'public_html/**/*',
-      '!public_html/.gitignore',
+      dropDir + '/**/*',
+      '!' + dropDir + '/.gitignore',
     ],
     cb);
 });
 
-// Renders website in src and outputs files to public_html folder
-gulp.task('website', function() {
-  return gulp.src('src/pages/**/*.+(njk)')
-    // .pipe(data(function() {
-    //     return require('./src/data/navbar.json')
-    // }))
-    .pipe(nunjucksRender({ path: ['src/templates',] }))
-    .pipe(gulp.dest('public_html'))
+// Copy css files to drop
+gulp.task('css', function () {
+  return gulp.src(srcDir + '/css/**/*.css')
+    .pipe(gulp.dest(dropDir + '/css'));
 });
+
+// Render nunjuck files in src to drop
+gulp.task('nunjucksRender', function () {
+  return gulp.src(srcDir + '/pages/**/*.+(njk)')
+    .pipe(nunjucksRender({ path: [srcDir + '/templates',] }))
+    .pipe(gulp.dest(dropDir));
+})
+
+// Creates website in drop directory
+gulp.task('website', ['nunjucksRender', 'css']);
