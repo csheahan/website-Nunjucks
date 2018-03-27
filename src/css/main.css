@@ -9,8 +9,18 @@ header {
   display: table;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
 .darkBackground {
   background-color: #060606;
+  color: #888888;
+}
+
+.darkBackground hr {
+  color: #888888;
+  background-color: #888888;
 }
 
 .topPadding {
@@ -21,6 +31,10 @@ header {
 .intro {
   vertical-align: middle;
   display: table-cell;
+}
+
+.introBody {
+  padding-top: 1em;
 }
 
 .smallOrangeHr  {
