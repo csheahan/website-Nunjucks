@@ -1,0 +1,56 @@
+{% extends "template.njk" %}
+
+{% block navbar %}
+{{ super() }}
+{{ nav.active('work') }}
+{% endblock %}
+
+{% block content %}
+<div class="topPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-lg-3">
+        <div class="text-center">
+          <h1>Work</h1>
+          <p>Where I have worked and what I have done<p>
+          <hr />
+        </div>
+        {% for company in work %}
+        <div class="media">
+          {% if company.logo %}
+            <img class="mr-3 logo" src="{{company.logo}}" />
+          {% endif %}
+          <div class="media-body">
+            {% if company.webpage %}
+              <h4>
+                <a href="{{company.webpage}}">{{company.name}}</a>
+              </h4>
+            {% else %}
+              <h4>{{company.name}}</h4>
+            {% endif %}
+            {% if company.team %}
+              <p class="closePTags">Team: {{company.team}}</p>
+            {% endif %}
+            <p class="closePTags">{{company.title}}</p>
+            <p class="closePTags">{{company.dates}}</p>
+            <ul>
+              {% for item in company.work %}
+                {% if item | isArray %}
+                  <ul>
+                    {% for nestedItem in item %}
+                      <li>{{nestedItem}}</li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <li>{{item}}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

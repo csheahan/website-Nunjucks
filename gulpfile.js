@@ -35,10 +35,26 @@ gulp.task('js', function() {
     .pipe(gulp.dest(dropDir + '/js'));
 });
 
+// Custom functions for nunjucks rendering
+var requireJson = function(fileName) {
+  return require('./' + srcDir + '/data/' + fileName +'.json')
+}
+
+var manageEnvironment = function(environment) {
+  environment.addFilter('isArray', function(obj) {
+    return Array.isArray(obj);
+  });
+}
+
 // Render nunjuck files in src to drop
 gulp.task('nunjucksRender', function () {
   return gulp.src(srcDir + '/pages/**/*.+(njk)')
-    .pipe(nunjucksRender({ path: [srcDir + '/templates',] }))
+    .pipe(data(requireJson('work')))
+    .pipe(data(requireJson('classes')))
+    .pipe(nunjucksRender({
+      path: [srcDir + '/templates',],
+      manageEnv: manageEnvironment,
+    }))
     .pipe(gulp.dest(dropDir));
 })
 

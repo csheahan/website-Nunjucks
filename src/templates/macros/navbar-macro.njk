@@ -5,22 +5,22 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div id="navbarCollapse" class="navbar-collapse collapse">
-    <a href="/index.html" class="navbar-brand">Chris Sheahan</a>
+    <a href="index.html" class="navbar-brand">Chris Sheahan</a>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#" class="{% if activePage === 'work' %}active{% endif %}">Work</a>
+        <a class="nav-link {{'active' if activePage === 'work'}}" href="work.html">Work</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" class="{% if activePage === 'projects' %}active{% endif %}">Side Projects</a>
+        <a class="nav-link {{'active' if activePage === 'projects'}}" href="#">Side Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" class="{% if activePage === 'school' %}active{% endif %}">School</a>
+        <a class="nav-link {{'active' if activePage === 'school'}}" href="#">School</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" class="{% if activePage === 'timeline' %}active{% endif %}">Timeline</a>
+        <a class="nav-link {{'active' if activePage === 'timeline'}}" href="#">Timeline</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" class="{% if activePage === 'contact' %}active{% endif %}">Contact Me</a>
+        <a class="nav-link {{'active' if activePage === 'contact'}}" href="#">Contact Me</a>
       </li>
     </ul>
   </div>

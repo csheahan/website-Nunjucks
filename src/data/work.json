@@ -1,0 +1,59 @@
+{
+  "work": [
+    {
+      "logo": "img/logos/xbox.png",
+      "name": "Microsoft",
+      "webpage": "http://www.microsoft.com/",
+      "team": "Xbox Live Social Engagement",
+      "title": "Software Engineer I",
+      "dates": "August 2016 - Present",
+      "work": []
+    },
+    {
+      "logo": "img/logos/xbox.png",
+      "name": "Microsoft",
+      "webpage": "http://www.microsoft.com/",
+      "team": "Xbox Live Social Engagement Intern",
+      "title": "Software Engineer I",
+      "dates": "May 2015 - August 2015",
+      "work": [
+        "Wrote a C# micro service that provides data hydration for web link posts for the Xbox Activity Feed",
+        [
+          "As a component wrote another C# micro service that scrapes a given webpage, returning a summary of the webpage"
+        ],
+        "Extended an internal node.js application to demo the new Activity Feed weblink item"
+      ]
+    },
+    {
+      "logo": "img/logos/bazaarvoice.jpg",
+      "name": "Bazaarvoice",
+      "webpage": "http://www.bazaarvoice.com/",
+      "team": "R&D Firebird",
+      "title": "TSF Intern",
+      "dates": "June 2014 - December 2014",
+      "work": [
+        "Worked on tooling, support, and frameworks on the Firbird product, a full stack JavaScript application to collect and display ratings and reviews",
+        "Created a npm installable node.js module to interface with various internal APIs with the purpose of data collection and aggregation",
+        [
+          "Additionally set up automated linting, documentation, and unit testing via gulp"
+        ],
+        "Assisted in remaking a web interface for collecting and displaying real time information and analytics for the Firebird product"
+      ]
+    },
+    {
+      "logo": "img/logos/qualcomm.png",
+      "name": "Qualcomm",
+      "webpage": "https://www.qualcomm.com/",
+      "team": "QCT Linux",
+      "title": "EIP Intern",
+      "dates": "May 2013 - August 2013",
+      "work": [
+        "Created an Android application to automate stress tests on new Android phones and tablets",
+        "Added tools to an internal web application to aid testers",
+        [
+          "Worked with php, html, and JavaScript"
+        ]
+      ]
+    }
+  ]
+}
