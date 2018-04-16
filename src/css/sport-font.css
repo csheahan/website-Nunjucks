@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'SportAwesome';
+    src:url('../fonts/sportawesome.eot');
+    src:url('../fonts/sportawesome.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/sportawesome.woff') format('woff'),
+        url('../fonts/sportawesome.ttf') format('truetype'),
+        url('../fonts/sportawesome.svg#sportawesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sa {
+    display: inline-block;
+    font: normal normal normal 14px/1 SportAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sa-football:before {
+    content: "\61";
+}
+.sa-puck:before {
+    content: "\62";
+}
+.sa-basketball:before {
+    content: "\63";
+}
+.sa-baseball:before {
+    content: "\64";
+}

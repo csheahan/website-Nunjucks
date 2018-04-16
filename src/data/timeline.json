@@ -1,0 +1,187 @@
+{
+  "timeline": [
+    {
+      "type": "event",
+      "keywords": "fulltime",
+      "icon": "fa fa-briefcase",
+      "title": "Xbox Live Social Services Full Time Developer",
+      "time": "August 2016 - Present",
+      "body": "Full time developer for Microsoft's Xbox team."
+    },
+    {
+      "type": "event",
+      "keywords": "college",
+      "icon": "fa fa-graduation-cap",
+      "title": "Graduate from The University of Texas at Austin",
+      "time": "May 21, 2016",
+      "body": "Graduated with a BS in Computer Science from The University of Texas at Austin"
+    },
+    {
+      "type": "date",
+      "date": "2016"
+    },
+    {
+      "type": "event",
+      "keywords": "college scholarship",
+      "icon": "fa fa-trophy",
+      "title": "Tracor/Frank McBee, Jr. Scholarship Endowment",
+      "time": "August 2015",
+      "body": "A departmental scholarship awarded by The University of Texas at Austin."
+    },
+    {
+      "type": "event",
+      "keywords": "intern",
+      "icon": "fa fa-windows",
+      "title": "Xbox Live Social Services Intern",
+      "time": "May 2015 - August 2015",
+      "body": "Interned on the Xbox team at Microsoft during the summer of 2015. More specifically I worked on the activity feed on the Xbox Live Social Services team. I worked on adding link functionality to the activity feed. Additionally, I created a mini service that when given a web link, it would return a title, description, and main picture for a web link. Finally, I added onto an internal node.js application to easily test new activity feed features."
+    },
+    {
+      "type": "event",
+      "keywords": "college",
+      "icon": "fa fa-group",
+      "title": "ACM - Association for Computing Machinery VP Finance",
+      "time": "May 2013 - May 2015",
+      "body": "Elected as VP Finance for 2 years in a row for the UT Austin chapter of the Association for Computing Machinery. As VP Finance I Managed over $36,000 in sponsorship money and membership dues. Additionally, I helped restart the ACM competitive programming program with a team of other students, where my jobs included budgeting and running biweekly competitions, designing the front end of our in-house auto-judge program, and providing prizes and food to contestants."
+    },
+    {
+      "type": "date",
+      "date": "2015"
+    },
+    {
+      "type": "event",
+      "keywords": "college scholarship",
+      "icon": "fa fa-trophy",
+      "title": "Angus G. and Erna Pearson Endowed Undergraduate Scholarship",
+      "time": "August 2014",
+      "body": "A departmental scholarship awarded by The University of Texas at Austin."
+    },
+    {
+      "type": "event",
+      "keywords": "college scholarship",
+      "icon": "fa fa-trophy",
+      "title": "Texas Top Ten Percent Scholarship",
+      "time": "August 2012, 2013, 2014",
+      "body": "A scholarship awarded for being in the top 10 percent of your high school class. The scholarship was maintained by taking 30 credit hours per year and maintaining a 3.25 GPA."
+    },
+    {
+      "type": "event",
+      "keywords": "intern",
+      "icon": "fa fa-briefcase",
+      "title": "R&D Firebird TSF Intern",
+      "time": "June 2014 - December 2014",
+      "body": "Interned at Bazaarvoice in Austin during the summer and fall of 2014. I worked on the Firebird team, which was the front facing product of Bazaarvoice. I worked primarily on the back end of the application, the build tools, and internal monitoring tools. All the above were written using JavaScript (node.js), Puppet, Bash, Ruby, and the tools used were TeamCity, Jenkins, gulp and mocha."
+    },
+    {
+      "type": "date",
+      "date": "2014"
+    },
+    {
+      "type": "event",
+      "keywords": "intern",
+      "icon": "fa fa-briefcase",
+      "title": "QCT Linux EIP Intern",
+      "time": "May 2013 - August 2013",
+      "body": "Interned at Qualcomm in San Diego during the summer of 2013. I first worked on an internal PHP application, adding a diff tool to it. After that, I worked on a stress testing android application that was designed to find hardware failures."
+    },
+    {
+      "type": "event",
+      "keywords": "college",
+      "icon": "fa fa-file-code-o",
+      "title": "Founder-School",
+      "time": "December 2012 - July 2013",
+      "body": "With a group of people met at a hackathon we attempted to build a generic teaching platform for aspiring entrepreneurs, especially those of high school age. I was the programming lead and designed the back end of the application using node.js and the compound.js framework with MongoDB for our database operations. I also prototyped the frontend using Jade and bootstrap. Before leaving to focus on an upcoming internship, we had a platform that had a small unit test suite via mocha, integration tests via mocha, a sample mock up of the course creation module, and a sample mock up of a student using a programming related module."
+    },
+    {
+      "type": "date",
+      "date": "2013"
+    },
+    {
+      "type": "date",
+      "keywords": "college",
+      "date": "Begin College"
+    },
+    {
+      "type": "event",
+      "keywords": "college scholarship",
+      "icon": "fa fa-trophy",
+      "title": "UT College of Natural Sciences \"Scientists for Tomorrow\" Scholarship",
+      "time": "June 2012",
+      "body": "Awarded a scholarship by the UT College of Natural Sciences that also allowed me to be a member of the \"Scientists for Tomorrow\" cohort."
+    },
+    {
+      "type": "date",
+      "keywords": "hs",
+      "date": "Finish High School"
+    },
+    {
+      "type": "event",
+      "keywords": "college scholarship",
+      "icon": "fa fa-trophy",
+      "title": "Stanberry & Associates Realtors Scholarship",
+      "time": "May 2012",
+      "body": "Awarded a local scholarship for academic excellence."
+    },
+    {
+      "type": "event",
+      "keywords": "college scholarship",
+      "icon": "fa fa-trophy",
+      "title": "Cedar Park Athletic Scholarship",
+      "time": "May 2012",
+      "body": "Awarded a scholarship from my high school's athletic booster club in recognition of my athletic and academic achievements."
+    },
+    {
+      "type": "event",
+      "keywords": "hs",
+      "icon": "fa fa-trophy",
+      "title": "AP Scholar with Distinction",
+      "time": "May 2012",
+      "body": "Awarded for averaging at least a 3.5 on all AP Exams, with scores of 3 or higher of 5 or more exams."
+    },
+    {
+      "type": "event",
+      "keywords": "hs programming",
+      "icon": "fa fa-file-code-o",
+      "title": "UIL Computer Science competition, State Quarterfinalist",
+      "time": "September 2011 - 2012",
+      "body": "Participated in a team of 4 in a 2 stage computer science competition, 1 part being written and 1 part being programming."
+    },
+    {
+      "type": "event",
+      "keywords": "hs robotics",
+      "icon": "fa fa-cogs",
+      "title": "Bowled Over! FIRST Tech Challenge, State Semifinalists",
+      "time": "September 2011 - 2012",
+      "body": "Participated in the Bowled Over! FIRST Tech Challenge robotics competition along with 7 other members. We won a regional competition and were semifinalists in the state competition."
+    },
+    {
+      "type": "date",
+      "date": "2012"
+    },
+    {
+      "type": "event",
+      "keywords": "hs sports",
+      "icon": "fa fa-trophy",
+      "title": "Academic All State Elite",
+      "time": "December 2011",
+      "body": "Nominated to the Texas Academic All State Elite team for football in 2011."
+    },
+    {
+      "type": "event",
+      "keywords": "hs sports",
+      "icon": "sa sa-football",
+      "title": "Texas Football 4A State Quarter Finalists",
+      "time": "August 2010 - December 2011",
+      "body": "Starting varsity defensive end for Cedar Park High School Junior and Senior year. Overall record for 2010 was 13-1. Overall record for 2011 was 11-3."
+    },
+    {
+      "type": "date",
+      "date": "2011"
+    },
+    {
+      "type": "date",
+      "keywords": "hs",
+      "date": "Begin High School"
+    }
+  ]
+}

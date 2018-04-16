@@ -1,0 +1,63 @@
+{% extends "template.njk" %}
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/timeline.css">
+<link rel="stylesheet" type="text/css" href="css/sport-font.css">
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+<script type="text/javascript" src="js/timeline.js"></script>
+{% endblock %}
+
+{% block navbar %}
+{{ super() }}
+{{ nav.active('timeline') }}
+{% endblock %}
+
+{% block content %}
+<div class="topPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-lg-3">
+        <div class="text-center">
+          <h2>Timeline</h2>
+          <p>An interactive timeline of my accomplishments.</p>
+          <label><input type="checkbox" id="workCheck" checked>Work</label></label>
+          <label><input type="checkbox" id="internCheck" checked>Internships</label></label>
+          <label><input type="checkbox" id="collegeCheck" checked>College</label></label>
+          <label><input type="checkbox" id="scholarshipCheck" checked>Scholarship</label></label>
+          <label><input type="checkbox" id="highCheck">High School</label></label>
+          <hr>
+        </div>
+        <ul class="timeline">
+          {% for obj in timeline %}
+            {% if obj.type == 'date' %}
+              <li class="{{obj.keywords}}">
+                <div class="timeline-date">{{obj.date}}</div>
+              </li>
+            {% elif obj.type == 'event' %}
+              <li class="{{obj.keywords}}">
+                {% if obj.icon %}
+                  <div class="timeline-badge {{obj.icon}}"></div>
+                {% endif %}
+                <div class="timeline-card">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">{{obj.title}}</h4>
+                    <p class="timeline-time">{{obj.time}}</p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>{{obj.body}}</p>
+                  </div>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

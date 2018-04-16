@@ -23,6 +23,12 @@ gulp.task('css', function () {
     .pipe(gulp.dest(dropDir + '/css'));
 });
 
+// Copy font files to drop
+gulp.task('font', function () {
+  return gulp.src(srcDir + '/fonts/**/*')
+    .pipe(gulp.dest(dropDir + '/fonts'));
+});
+
 // Copy image files to drop
 gulp.task('img', function() {
   return gulp.src(srcDir + '/img/**/*')
@@ -52,6 +58,7 @@ gulp.task('nunjucksRender', function () {
     .pipe(data(requireJson('work')))
     .pipe(data(requireJson('projects')))
     .pipe(data(requireJson('school')))
+    .pipe(data(requireJson('timeline')))
     .pipe(nunjucksRender({
       path: [srcDir + '/templates',],
       manageEnv: manageEnvironment,
@@ -65,6 +72,7 @@ gulp.task(
   [
     'nunjucksRender',
     'css',
+    'font',
     'js',
     'img',
   ]);
