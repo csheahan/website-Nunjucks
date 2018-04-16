@@ -2,6 +2,7 @@ var data = require('gulp-data');
 var del = require('del');
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
+var exec = require('child_process').exec;
 
 // Source and destination locations
 var srcDir = 'src'
@@ -16,6 +17,54 @@ gulp.task('clean', function(cb) {
     ],
     cb);
 });
+
+
+// Spellcheck html files
+gulp.task('spellcheck', ['website'], function(cb) {
+  var task = [
+    'python',
+    'scripts/spellcheck.py',
+    '--word_lists=scripts/wordlists/*.txt',
+    'public_html/*.html',
+  ].join(' ');
+
+  exec(task, function(err, stdout, stderr) {
+    if (err) {
+      console.log(err);
+    }
+
+    console.log(stdout);
+    console.log(stderr);
+  });
+});
+
+// Check links in html files
+gulp.task('check404', ['website'], function(cb) {
+  var task = [
+    'python',
+    'scripts/check404.py',
+    'public_html/*.html',
+  ].join(' ');
+
+  exec(task, function(err, stdout, stderr) {
+    if (err) {
+      console.log(err);
+    }
+
+    console.log(stdout);
+    console.log(stderr);
+  });
+});
+
+// Run post validation on a website build
+gulp.task(
+  'validate',
+  [
+    'website',
+    'spellcheck',
+    'check404'
+  ]);
+
 
 // Copy css files to drop
 gulp.task('css', function () {

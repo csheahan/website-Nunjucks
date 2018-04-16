@@ -32,7 +32,7 @@
       "title": "TSF Intern",
       "dates": "June 2014 - December 2014",
       "work": [
-        "Worked on tooling, support, and frameworks on the Firbird product, a full stack JavaScript application to collect and display ratings and reviews",
+        "Worked on tooling, support, and frameworks on the Firebird product, a full stack JavaScript application to collect and display ratings and reviews",
         "Created a npm installable node.js module to interface with various internal APIs with the purpose of data collection and aggregation",
         [
           "Additionally set up automated linting, documentation, and unit testing via gulp"
