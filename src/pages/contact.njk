@@ -1,0 +1,27 @@
+{% extends "template.njk" %}
+
+{% block navbar %}
+{{ super() }}
+{{ nav.active('contact') }}
+{% endblock %}
+
+{% block content %}
+<div class="topPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-lg-3">
+        <div class="text-center">
+          <h2>Contact Information</h2>
+          <p>Contact me the following ways.</p>
+          <hr>
+        </div>
+        <ul>
+          <li>My personal email: <a href="mailto:chris.sheahan@live.com">chris.sheahan AT live.com</a></li>
+          <li>Github: <a href="https://github.com/csheahan">csheahan</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/chrissheahan">Chris Sheahan</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
