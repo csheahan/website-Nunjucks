@@ -20,6 +20,9 @@
               <a href="#{{semester.locator}}" class="nav-link" id="{{semester.locator}}-tab" data-toggle="tab" role="tab" aria-controls="{{semester.locator}}" aria-selected="false">{{semester.name}}</a>
             </li>
           {% endfor %}
+          <li role="presentation">
+            <a href="#extraCurricular" class="nav-link" id="extraCurricular-tab" data-toggle="tab" role="tab" aria-controls="extraCurricular" aria-selected="false">Extra Curricular</a>
+          </li>
         </ul>
         <div class="tab-content">
           {% for semester in semesters %}
@@ -49,6 +52,16 @@
               {% endfor %}
             </div>
           {% endfor %}
+          <div class="tab-pane fade" id="extraCurricular" role="tabpanel" aria-labelledby="extraCurricular-tab">
+            {% for activity in extraCurriculars %}
+              <h4>{{activity.name}}</h4>
+              <ul>
+                {% for i in activity.info %}
+                  <li>{{i}}</li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </div>
         </div>
     </div>
   </div>

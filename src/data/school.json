@@ -275,5 +275,22 @@
         }
       ]
     }
+  ],
+  "extraCurriculars": [
+    {
+      "name": "ACM - Association for Computing Machinery",
+      "info": [
+        "VP Finance: May 2013 - May 2015",
+        "National ACM Member: August 2013 - August 2015",
+        "Member of Student Chapter: August 2012 - Present"
+      ]
+    },
+    {
+      "name": "Longhorn Lockpicking Club",
+      "info": [
+        "Webmaster: May 2013 - May 2014",
+        "Member: August 2012 - May 2014"
+      ]
+    }
   ]
 }
