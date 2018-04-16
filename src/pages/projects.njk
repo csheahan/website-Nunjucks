@@ -1,0 +1,64 @@
+{% extends "template.njk" %}
+
+{% block navbar %}
+{{ super() }}
+{{ nav.active('projects') }}
+{% endblock %}
+
+{% block content %}
+<div class="topPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-lg-3">
+        <div class="text-center">
+          <h1>Projects</h1>
+          <p>Things I have made in my free time</p>
+          <p><a href="https://github.com/csheahan">Check out my github profile</a> to see some of the things I have made.</p>
+          <hr />
+        </div>
+        <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+          {% for project in sideprojects %}
+            <li role="presentation">
+              <a href="#{{project.locator}}" class="nav-link" id="{{project.locator}}-tab" data-toggle="tab" role="tab" aria-controls="{{project.locator}}" aria-selected="false">{{project.tabName}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="tab-content">
+          {% for project in sideprojects %}
+            <div class="tab-pane fade" id="{{project.locator}}" role="tabpanel" aria-labelledby="{{project.locator}}-tab">
+              <div class="text-center">
+                <h2>{{project.name}}</h2>
+                {% if project.images %}
+                  <div id="{{project.locator}}Carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                      {% for image in project.images %}
+                        <li data-target="#{{project.locator}}Carousel" data-slide-to="{{loop.index0}}" class="{{'active' if loop.first}}"></li>
+                      {% endfor %}
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      {% for image in project.images %}
+                        <div class="carousel-item {{'active' if loop.first}}">
+                          <img src="{{image}}"" class="projectPic">
+                        </div>
+                      {% endfor %}
+                    </div>
+                    <a class="carousel-control-prev" href="#{{project.locator}}Carousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#{{project.locator}}Carousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
+              <p>{{ project.description | safe }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

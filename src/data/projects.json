@@ -1,0 +1,60 @@
+{
+  "sideprojects": [
+    {
+      "locator": "highlow",
+      "name": "HighLow-NES",
+      "tabName": "HighLow-NES",
+      "images": [
+        "img/sideprojects/highlow-menu.png",
+        "img/sideprojects/highlow-howto.png"
+      ],
+      "description": "HighLow-NES is a simple NES game written in 8-bit 6502 assembly and meant to be run via a NES emulator or, if flashed to a cart, NES hardware. High Low is a card game in which a player flips over a card, then guesses if the next card will be higher or lower in value. The objective is to achieve the highest streak of successful guesses. This project started in the summer 2013 because I was inspired after playing a homebrew NES game, Battle Kid: Fortress of Peril. I wondered how it was made, and decided to make one myself. For more information on the game or to check out the source code, head to the <a href=\"https://github.com/csheahan/HighLow-NES\">Github page</a>."
+    },
+    {
+      "locator": "numtheory",
+      "name": "Number Theory Tkinter App",
+      "tabName": "Number Theory",
+      "images": [
+        "img/sideprojects/numbertheory-demo-1.png",
+        "img/sideprojects/numbertheory-demo-2.png"
+      ],
+      "description": "A Python Tkinter application that demonstrates various number theory problems. I decided to pursue this for 3 main reasons. <ol> <li>GUI Programming: I've always been interested in not only creating things, but also creating nice, intuitive designs to display the information to the users. This is an attempt at a fairly simple application to do so.</li> <li>Python Programming: I haven't ever really touched Python as a language in depth, so this application gives me both an excuse and a chance to do so.</li> <li>Number Theory: I took a number theory class in college and really enjoyed it. Therefore this project allows me to both enhance and reinforce my understanding of this subject I enjoyed.</li> </ol> The source code and project can be <a href=\"https://github.com/csheahan/NumberTheoryProblems\">found here</a>."
+    },
+    {
+      "locator": "posture",
+      "name": "Posture Reminder",
+      "tabName": "Posture Reminder",
+      "images": [
+        "img/sideprojects/posture_windows_10.png",
+        "img/sideprojects/posture_ubuntu_1404.png",
+        "img/sideprojects/posture_custom_message.png"
+      ],
+      "description": "A simple cross-platform python script to help remind you to fix your posture. By default, it will send the message \"Fix your posture\" via a non-intrusive desktop toast message every 30 minutes, but the message and time delay are modifiable via command line arguments."
+    },
+    {
+      "locator": "website",
+      "name": "Website",
+      "tabName": "Website",
+      "description": "The website you are on right now. It often is an excuse for me to explore new web technologies. Currently it uses node, Nunjucks, and Gulp to build the website via templates to avoid reusing code. In the past, I have explored Jade, parallax scrolling, Yahoo's Pure CSS framework, and a single page website."
+    },
+    {
+      "locator": "nesPaint",
+      "name": "nesPaint",
+      "tabName": "nesPaint",
+      "images": [
+        "img/sideprojects/nespaint-1.png",
+        "img/sideprojects/nespaint-2.png"
+      ],
+      "description": "A toy paint-like application to draw backgrounds for NES games instead of having to manually code backgrounds. This also doubled as an investigation into the .chr file format as there was no previous online documentation that I could find on the subject. The source code, application, and .chr documentation can be <a href=\"https://github.com/csheahan/nesPaint\">found here</a>."
+    },
+    {
+      "locator": "check404",
+      "name": "check404.sh",
+      "tabName": "check404",
+      "images": [
+        "img/sideprojects/check404-demo.png"
+      ],
+      "description": "check404 is a simple bash script I created to ensure that the links on my website are valid. Additionally, I used it to explore how to change text color in bash scripts. It was uploaded at the request of a friend, and can be <a href=\"https://github.com/csheahan/check404\">found here</a>."
+    }
+  ]
+}
