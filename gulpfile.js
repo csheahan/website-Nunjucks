@@ -51,6 +51,7 @@ gulp.task('nunjucksRender', function () {
   return gulp.src(srcDir + '/pages/**/*.+(njk)')
     .pipe(data(requireJson('work')))
     .pipe(data(requireJson('projects')))
+    .pipe(data(requireJson('classes')))
     .pipe(nunjucksRender({
       path: [srcDir + '/templates',],
       manageEnv: manageEnvironment,

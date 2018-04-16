@@ -1,0 +1,56 @@
+{% extends "template.njk" %}
+
+{% block navbar %}
+{{ super() }}
+{{ nav.active('school') }}
+{% endblock %}
+
+{% block content %}
+<div class="topPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-lg-3">
+        <div class="text-center">
+          <h2>School</h2>
+          <p>Relevant or interesting classes I took in my time at the University of Texas at Austin</p>
+        </div>
+        <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+          {% for semester in semesters %}
+            <li role="presentation">
+              <a href="#{{semester.locator}}" class="nav-link" id="{{semester.locator}}-tab" data-toggle="tab" role="tab" aria-controls="{{semester.locator}}" aria-selected="false">{{semester.name}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="tab-content">
+          {% for semester in semesters %}
+            <div class="tab-pane fade" id="{{semester.locator}}" role="tabpanel" aria-labelledby="{{semester.locator}}-tab">
+              <div class="text-center">
+                <h2>{{semester.name}}</h2>
+              </div>
+              {% for class in semester.classes %}
+                <h4>{{class.name}}</h4>
+                <p class="closePTags">{{class.id}}</p>
+                {% if class.webpage %}
+                  <p><a href="{{class.webpage}}">{{class.webpage}}</a></p>
+                {% endif %}
+                <ul>
+                  {% for point in class.description %}
+                    {% if point | isArray %}
+                      <ul>
+                        {% for nestedItem in point %}
+                          <li>{{nestedItem | safe}}</li>
+                        {% endfor %}
+                      </ul>
+                    {% else %}
+                      <li>{{point | safe}}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
