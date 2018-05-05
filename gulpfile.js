@@ -90,6 +90,12 @@ gulp.task('js', function() {
     .pipe(gulp.dest(dropDir + '/js'));
 });
 
+// Copy resume to drop
+gulp.task('resume', function() {
+  return gulp.src(srcDir + '/resume/**/*.pdf')
+    .pipe(gulp.dest(dropDir));
+});
+
 // Custom functions for nunjucks rendering
 var requireJson = function(fileName) {
   return require('./' + srcDir + '/data/' + fileName +'.json')
@@ -124,4 +130,5 @@ gulp.task(
     'font',
     'js',
     'img',
+    'resume',
   ]);

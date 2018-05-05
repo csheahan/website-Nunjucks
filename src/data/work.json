@@ -13,8 +13,8 @@
       "logo": "img/logos/xbox.png",
       "name": "Microsoft",
       "webpage": "http://www.microsoft.com/",
-      "team": "Xbox Live Social Engagement Intern",
-      "title": "Software Engineer I",
+      "team": "Xbox Live Social Engagement",
+      "title": "Xbox Live Social Engagement Intern",
       "dates": "May 2015 - August 2015",
       "work": [
         "Wrote a C# micro service that provides data hydration for web link posts for the Xbox Activity Feed",
