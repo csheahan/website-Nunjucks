@@ -8,6 +8,10 @@ var exec = require('child_process').exec;
 var srcDir = 'src'
 var dropDir = 'public_html'
 
+// Default command builds website
+gulp.task('default', [ 'website' ]);
+
+
 // Delete everything in drop except the placeholder .gitignore, if exists
 gulp.task('clean', function(cb) {
   del(
