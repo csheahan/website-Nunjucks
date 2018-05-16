@@ -1,0 +1,22 @@
+{
+  "name": "website-nunjucks",
+  "version": "1.0.0",
+  "description": "Static website generator using nunjucks and gulp",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csheahan/website-Nunjucks.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/csheahan/website-Nunjucks/issues"
+  },
+  "homepage": "https://www.csheahan.com"
+}
