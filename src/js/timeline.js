@@ -36,4 +36,13 @@ $(document).ready(function() {
       $(".intern").hide();
     }
   });
+
+  $("#workCheck").click(function() {
+    if (this.checked) {
+      $(".fulltime").show();
+    }
+    else {
+      $(".fulltime").hide();
+    }
+  });
 });
