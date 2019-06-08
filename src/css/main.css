@@ -13,6 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+.normalText {
+  color: #212529;
+}
+
+.inline {
+  display: inline;
+}
+
 .darkBackground {
   background-color: #060606;
   color: #888888;
@@ -83,4 +91,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 4em;
   max-height: 25em;
   width: auto;
+}
+
+.mb1 {
+  margin-bottom: 1em;
 }
