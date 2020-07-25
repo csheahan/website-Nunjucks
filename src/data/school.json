@@ -125,7 +125,6 @@
         {
           "name": "Network Security",
           "id": "CS 361S",
-          "webpage": "https://www.cs.utexas.edu/~ojensen/courses/cs361s/",
           "description": [
             "Went over a variety of topic including cryptography, web and system attacks, defenses against attacks, and intrusion detection.",
             "Performed various web attacks such as SQL injections, cookie hijacking, and cross site scripting on a broken web application within a virtual machine.",
